@@ -31,7 +31,7 @@ Route::get('/migrate', function () {
 });
 
 
-Route::get('/migrate', function () {
+Route::get('/l5', function () {
     Artisan::call('l5-swagger:generate');
     return 'done';
 });
