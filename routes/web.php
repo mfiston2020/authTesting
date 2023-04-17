@@ -29,3 +29,9 @@ Route::get('/migrate', function () {
     Artisan::call('migrate');
     return 'done';
 });
+
+
+Route::get('/migrate', function () {
+    Artisan::call('l5-swagger:generate');
+    return 'done';
+});
