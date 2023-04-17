@@ -1,0 +1,23 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Authentication",
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/tokens/users": {
+            "get": {
+                "operationId": "dd7e10e78a5a5bb388aec39c04a67073",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        }
+    }
+}
