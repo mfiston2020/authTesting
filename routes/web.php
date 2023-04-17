@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('/optimize', function () {
+    Artisan::call('optimize');
+    return 'done';
+});
+
+
+Route::get('/migrate', function () {
+    Artisan::call('migrate');
+    return 'done';
 });
